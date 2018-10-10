@@ -1,2 +1,2 @@
-# IdentityV-supportTool
+# IdentityV-SupportTool
 オンラインスマホゲームIdentityVのスキルタイマーや、スキルアイコン一覧などを表示。
