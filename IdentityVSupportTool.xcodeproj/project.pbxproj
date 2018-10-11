@@ -15,6 +15,8 @@
 		B6072571216EDDE400C0E1DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B607256F216EDDE400C0E1DB /* LaunchScreen.storyboard */; };
 		B607257C216EDDE400C0E1DB /* IdentityVSupportToolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B607257B216EDDE400C0E1DB /* IdentityVSupportToolTests.swift */; };
 		B6072587216EDDE400C0E1DB /* IdentityVSupportToolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6072586216EDDE400C0E1DB /* IdentityVSupportToolUITests.swift */; };
+		B68C0D69216EE09F0096161E /* TImerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B68C0D60216EE09F0096161E /* TImerViewController.xib */; };
+		B68C0D6A216EE09F0096161E /* TImerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68C0D61216EE09F0096161E /* TImerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		B6072582216EDDE400C0E1DB /* IdentityVSupportToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IdentityVSupportToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6072586216EDDE400C0E1DB /* IdentityVSupportToolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityVSupportToolUITests.swift; sourceTree = "<group>"; };
 		B6072588216EDDE400C0E1DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B68C0D60216EE09F0096161E /* TImerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TImerViewController.xib; sourceTree = "<group>"; };
+		B68C0D61216EE09F0096161E /* TImerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TImerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,11 @@
 			isa = PBXGroup;
 			children = (
 				B6072564216EDDE400C0E1DB /* AppDelegate.swift */,
+				B6BDAC35216EE6A80029EEDB /* Application */,
+				B68C0D5C216EE09F0096161E /* Presentation */,
+				B68C0D65216EE09F0096161E /* Domain */,
+				B68C0D66216EE09F0096161E /* Repository */,
+				B68C0D62216EE09F0096161E /* Data */,
 				B6072566216EDDE400C0E1DB /* FirstViewController.swift */,
 				B6072568216EDDE400C0E1DB /* SecondViewController.swift */,
 				B607256A216EDDE400C0E1DB /* Main.storyboard */,
@@ -126,6 +135,131 @@
 				B6072588216EDDE400C0E1DB /* Info.plist */,
 			);
 			path = IdentityVSupportToolUITests;
+			sourceTree = "<group>";
+		};
+		B68C0D5C216EE09F0096161E /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B6BDAC37216EE6C10029EEDB /* UI */,
+				B68C0D5D216EE09F0096161E /* Presenter */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B68C0D5D216EE09F0096161E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B68C0D5E216EE09F0096161E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B68C0D5F216EE09F0096161E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B68C0D60216EE09F0096161E /* TImerViewController.xib */,
+				B68C0D61216EE09F0096161E /* TImerViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B68C0D62216EE09F0096161E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B6BDAC39216EE8A40029EEDB /* API */,
+				B68C0D64216EE09F0096161E /* DataStore */,
+				B68C0D63216EE09F0096161E /* Entity */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B68C0D63216EE09F0096161E /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		B68C0D64216EE09F0096161E /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataStore;
+			sourceTree = "<group>";
+		};
+		B68C0D65216EE09F0096161E /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				B68C0D68216EE09F0096161E /* UseCase */,
+				B68C0D67216EE09F0096161E /* Translater */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		B68C0D66216EE09F0096161E /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		B68C0D67216EE09F0096161E /* Translater */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Translater;
+			sourceTree = "<group>";
+		};
+		B68C0D68216EE09F0096161E /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		B6BDAC35216EE6A80029EEDB /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				B6BDAC36216EE6B20029EEDB /* Shared */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		B6BDAC36216EE6B20029EEDB /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		B6BDAC37216EE6C10029EEDB /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B6BDAC38216EE6CE0029EEDB /* Cell */,
+				B68C0D5E216EE09F0096161E /* View */,
+				B68C0D5F216EE09F0096161E /* ViewController */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B6BDAC38216EE6CE0029EEDB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		B6BDAC39216EE8A40029EEDB /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +366,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B68C0D69216EE09F0096161E /* TImerViewController.xib in Resources */,
 				B6072571216EDDE400C0E1DB /* LaunchScreen.storyboard in Resources */,
 				B607256E216EDDE400C0E1DB /* Assets.xcassets in Resources */,
 				B607256C216EDDE400C0E1DB /* Main.storyboard in Resources */,
@@ -259,6 +394,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B68C0D6A216EE09F0096161E /* TImerViewController.swift in Sources */,
 				B6072569216EDDE400C0E1DB /* SecondViewController.swift in Sources */,
 				B6072565216EDDE400C0E1DB /* AppDelegate.swift in Sources */,
 				B6072567216EDDE400C0E1DB /* FirstViewController.swift in Sources */,
